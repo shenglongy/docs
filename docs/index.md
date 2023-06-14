@@ -2,4 +2,5 @@
 [查看npm, yarn全局安装过的包](/list_npm_yarn_global_installed_packages)  
 [Yarn升级package.json](/upgrade-package-json-with-yarn)  
 [Git打标签](/git-tag)  
-[CSS实现单行、多行文本溢出显示省略号](/truncate-string-with-ellipsis)
+[CSS实现单行、多行文本溢出显示省略号](/truncate-string-with-ellipsis)  
+[IntersectionObserver](/intersection_observer)
