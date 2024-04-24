@@ -1,15 +1,17 @@
 {
   "name": "docs",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "license": "MIT",
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "serve": "vitepress serve docs"
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "vitepress": "^1.0.0-beta.2",
-    "vue": "^3.3.4"
+    "vitepress": "^1.1.3"
   }
 }

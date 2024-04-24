@@ -3,4 +3,5 @@
 [Yarn升级package.json](/upgrade-package-json-with-yarn)  
 [Git打标签](/git-tag)  
 [CSS实现单行、多行文本溢出显示省略号](/truncate-string-with-ellipsis)  
-[IntersectionObserver](/intersection_observer)
+[IntersectionObserver](/intersection_observer)  
+[CSS实现整站灰色](/grayscale)
