@@ -5,4 +5,5 @@
 [CSS实现单行、多行文本溢出显示省略号](/truncate-string-with-ellipsis)  
 [IntersectionObserver](/intersection_observer)  
 [CSS实现整站灰色](/grayscale)  
-[homebrew安装指定版本nodejs](/how_to_install_specific_nodejs_version_with_homebrew.md)
+[homebrew安装指定版本nodejs](/how_to_install_specific_nodejs_version_with_homebrew.md)  
+[pnpm升级依赖库](/pnpm.md)  
