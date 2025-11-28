@@ -7,3 +7,4 @@
 [CSS实现整站灰色](/grayscale)  
 [homebrew安装指定版本nodejs](/how_to_install_specific_nodejs_version_with_homebrew.md)  
 [pnpm升级依赖库](/pnpm.md)  
+[UPNG 压缩输出体积波动说明](/upng.md)  
