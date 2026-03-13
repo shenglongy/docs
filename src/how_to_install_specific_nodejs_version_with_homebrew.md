@@ -5,6 +5,7 @@
 :::
 
 mac环境下,使用homebrew 安装的nodejs, 默认是最高版本,命令如下:
+
 ```sh
 brew install node
 ```

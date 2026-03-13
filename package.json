@@ -1,17 +1,23 @@
 {
   "name": "docs",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
+    "format": "prettier --write ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vitepress": "^1.6.4"
+    "@tailwindcss/vite": "^4.2.1",
+    "@types/node": "^25.5.0",
+    "prettier": "^3.8.1",
+    "sass-embedded": "^1.98.0",
+    "tailwindcss": "^4.2.1",
+    "vitepress": "2.0.0-alpha.16"
   }
 }

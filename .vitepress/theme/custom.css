@@ -1,0 +1,133 @@
+/**
+ * Theme: Slate Blue — 清新、克制、高级
+ */
+
+:root {
+  /* Brand — 沉稳灰蓝，不张扬 */
+  --vp-c-brand-1: #3451b2;
+  --vp-c-brand-2: #3a5ccc;
+  --vp-c-brand-3: #5672cd;
+  --vp-c-brand-soft: rgba(58, 92, 204, 0.08);
+
+  /* 干净的冷白底 */
+  --vp-c-bg: #fcfcfd;
+  --vp-c-bg-soft: #f4f5f7;
+  --vp-c-bg-alt: #eef0f3;
+
+  /* 层次分明的灰色文字 */
+  --vp-c-text-1: #1a1d26;
+  --vp-c-text-2: #5a5e6a;
+  --vp-c-text-3: #9196a1;
+
+  /* 淡灰边框，几乎隐形 */
+  --vp-c-border: #e8eaee;
+  --vp-c-divider: #e8eaee;
+  --vp-c-gutter: #e8eaee;
+
+  /* Hero — 从深蓝到天蓝的渐变，清新感 */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(135deg, #3451b2, #3a5ccc, #6b8de6);
+  --vp-home-hero-image-background-image: linear-gradient(135deg, rgba(58, 92, 204, 0.12), rgba(107, 141, 230, 0.06));
+  --vp-home-hero-image-filter: blur(72px);
+
+  /* 按钮 */
+  --vp-button-brand-bg: #3a5ccc;
+  --vp-button-brand-hover-bg: #3451b2;
+  --vp-button-brand-active-bg: #2c4599;
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-text: #fff;
+
+  /* 代码块 */
+  --vp-code-block-bg: #f5f6f8;
+}
+
+.dark {
+  --vp-c-brand-1: #8da4ef;
+  --vp-c-brand-2: #6b8de6;
+  --vp-c-brand-3: #4d6fd0;
+  --vp-c-brand-soft: rgba(107, 141, 230, 0.1);
+
+  --vp-c-bg: #151519;
+  --vp-c-bg-soft: #1c1c22;
+  --vp-c-bg-alt: #24242c;
+
+  --vp-c-text-1: #ededf0;
+  --vp-c-text-2: #9196a1;
+  --vp-c-text-3: #62656e;
+
+  --vp-c-border: #2a2a34;
+  --vp-c-divider: #2a2a34;
+  --vp-c-gutter: #2a2a34;
+
+  --vp-home-hero-name-background: linear-gradient(135deg, #6b8de6, #8da4ef, #b0c3f5);
+
+  --vp-button-brand-bg: #6b8de6;
+  --vp-button-brand-hover-bg: #8da4ef;
+  --vp-button-brand-active-bg: #4d6fd0;
+  --vp-button-brand-text: #151519;
+
+  --vp-code-block-bg: #1c1c22;
+}
+
+/* ─── Sidebar ─── */
+.VPSidebarItem.level-0 > .items {
+  padding-left: 16px;
+}
+
+/* ─── Hero ─── */
+.VPHero .name .clip {
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+.VPHero .tagline {
+  color: var(--vp-c-text-2);
+}
+
+/* ─── Feature Cards — 克制的交互 ─── */
+.VPFeature {
+  border: 1px solid var(--vp-c-border);
+  border-radius: 10px;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.VPFeature:hover {
+  border-color: var(--vp-c-brand-3);
+  box-shadow: 0 2px 12px rgba(52, 81, 178, 0.06);
+}
+
+.dark .VPFeature:hover {
+  box-shadow: 0 2px 12px rgba(107, 141, 230, 0.05);
+}
+
+.VPFeature .icon {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.VPFeature .title {
+  font-weight: 600;
+}
+
+.VPFeature .details {
+  color: var(--vp-c-text-2);
+}
+
+.VPFeature .link-text {
+  color: var(--vp-c-brand-1);
+  font-weight: 500;
+}
+
+/* ─── Typography ─── */
+.vp-doc h1 {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.vp-doc h2 {
+  font-weight: 700;
+  border-color: var(--vp-c-border);
+}
