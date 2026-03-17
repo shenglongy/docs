@@ -30,8 +30,8 @@ features:
     linkText: "查看 →"
   - icon: 🔧
     title: 工具 & 环境
-    details: Git、Homebrew、VS Code
-    link: /git-tag
+    details: Git、Homebrew、VS Code、Go
+    link: /go-common-commands
     linkText: "查看 →"
   - icon: 📷
     title: 其他
