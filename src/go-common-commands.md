@@ -226,7 +226,7 @@ go mod init 模块名
 例如：
 
 ```bash
-go mod init gamehub/server
+go mod init example/server
 ```
 
 执行后，Go 会创建 `go.mod`，并写入当前模块名。
@@ -258,7 +258,7 @@ go run ./cmd/api
 ### 一个常见流程
 
 ```bash
-go mod init gamehub/server
+go mod init example/server
 go get github.com/gin-gonic/gin
 go mod tidy
 ```

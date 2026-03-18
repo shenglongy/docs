@@ -30,8 +30,8 @@ features:
     linkText: "查看 →"
   - icon: 🔧
     title: 工具 & 环境
-    details: Git、Homebrew、VS Code、Go
-    link: /go-common-commands
+    details: Git、Homebrew、VS Code、Go、MySQL
+    link: /mysql-local-basics
     linkText: "查看 →"
   - icon: 📷
     title: 其他

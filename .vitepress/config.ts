@@ -39,6 +39,7 @@ export default defineConfig({
           { text: "Git打标签", link: "/git-tag" },
           { text: "Git项目级别配置", link: "/git-local-config" },
           { text: "Go常用命令与模块基础", link: "/go-common-commands" },
+          { text: "本地MySQL基础与常用命令", link: "/mysql-local-basics" },
           { text: "VS Code命令行", link: "/install_code_command/" },
           { text: "Homebrew安装Node.js", link: "/how_to_install_specific_nodejs_version_with_homebrew" },
         ],
