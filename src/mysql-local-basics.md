@@ -76,6 +76,29 @@ mysql -u root -p
 
 这样回车后会提示输入密码。
 
+### 常见参数缩写
+
+MySQL 命令行里经常会看到这些参数：
+
+- `-u` = `user`
+- `-p` = `password`
+- `-h` = `host`
+- `-P` = `port`
+- `-D` = `database`
+- `-e` = `execute`
+
+例如：
+
+```bash
+mysql -u root -D appdb -e "SHOW TABLES;"
+```
+
+可以理解为：
+
+- 使用 `root` 用户连接
+- 默认选择 `appdb` 数据库
+- 执行 `SHOW TABLES;` 这条 SQL 后退出
+
 ## 创建数据库
 
 登录后可以执行：
@@ -145,6 +168,78 @@ CREATE DATABASE appdb;
 ```sql
 CREATE DATABASE IF NOT EXISTS appdb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
+
+## 数据库和表的关系
+
+可以先这样理解：
+
+- 数据库像一个更大的容器
+- 表是数据库里面的具体数据结构
+
+例如：
+
+- `appdb` 是数据库名
+- `users`、`posts`、`orders` 这些通常是表名
+
+所以：
+
+- `appdb.users`
+- `appdb.posts`
+
+表示的是同一个数据库中的不同表。
+
+### 不同数据库里可以有同名表吗
+
+可以。
+
+例如你完全可以同时有：
+
+- `appdb.users`
+- `demo_db.users`
+
+它们不是同一张表，因为它们属于不同数据库。
+
+## 查看数据库列表
+
+```bash
+mysql -u root -e "SHOW DATABASES;"
+```
+
+作用：
+
+- 查看当前 MySQL 里有哪些数据库
+
+## 查看某个数据库里的表
+
+```bash
+mysql -u root -D appdb -e "SHOW TABLES;"
+```
+
+作用：
+
+- 进入指定数据库
+- 查看这个数据库里当前有哪些表
+
+这里的：
+
+- `-D appdb` 表示选择数据库 `appdb`
+
+如果结果是空的，通常表示：
+
+- 这个数据库已经存在
+- 但里面还没有创建任何表
+
+## 检查某张表是否存在
+
+```bash
+mysql -u root -D appdb -e "SHOW TABLES LIKE 'users';"
+```
+
+作用：
+
+- 检查指定数据库里是否存在 `users` 表
+
+如果查不到结果，通常表示这张表还没创建。
 
 ## localhost 和 127.0.0.1 的区别
 
